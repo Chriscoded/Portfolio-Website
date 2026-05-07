@@ -83,7 +83,7 @@ export const Hero = () => {
 
                             <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
                                 Hi, I'm Amaeme Christopher — a software engineer specializing in
-                                C# (.Net), Java SpringBoot, PHP(Laravel), React, and TypeScript. I build scalable, performant web
+                                C# (.Net), Java SpringBoot, PHP(Laravel), Angular, React, and TypeScript. I build scalable, performant web
                                 applications that users love.
                             </p>
                         </div>
