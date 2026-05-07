@@ -9,7 +9,6 @@ import { Contact } from './sections/Contact'
 import { Footer } from './layout/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
       <div className="min-h-screen overflow-x-hidden">
