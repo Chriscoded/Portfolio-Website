@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { Navbar } from "@/layout/Navbar"
-import { Hero } from "@/sections/Hero"
+import { Navbar } from "./layout/Navbar"
+import { Hero } from "./sections/Hero"
 import { About } from './sections/About'
 import { Projects } from './sections/Projects'
 import { Experience } from './sections/Experience'
