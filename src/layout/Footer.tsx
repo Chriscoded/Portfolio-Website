@@ -1,8 +1,6 @@
 //import { Github, Linkedin, Twitter, Heart } from "lucide-react";
 import { Link} from "lucide-react";
 
-import type { ReactNode, ButtonHTMLAttributes } from "react";
-
 
 const socialLinks = [
   { icon: Link, href: "#", label: "GitHub" },
