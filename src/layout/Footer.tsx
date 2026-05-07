@@ -3,9 +3,6 @@ import { Link} from "lucide-react";
 
 import type { ReactNode, ButtonHTMLAttributes } from "react";
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  children: ReactNode;
-}
 
 const socialLinks = [
   { icon: Link, href: "#", label: "GitHub" },

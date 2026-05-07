@@ -49,7 +49,7 @@ const handleSubmit = async (
       e.preventDefault();
 
     setIsLoading(true);
-    setSubmitStatus({ type: null, message: "" });
+    setSubmitStatus({ type: "", message: "" });
     try {
       const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
       const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
