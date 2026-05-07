@@ -1,9 +1,16 @@
 //import { Github, Linkedin, Twitter, Heart } from "lucide-react";
+import { Link} from "lucide-react";
+
+import type { ReactNode, ButtonHTMLAttributes } from "react";
+
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  children: ReactNode;
+}
 
 const socialLinks = [
-//   { icon: Github, href: "#", label: "GitHub" },
-//   { icon: Linkedin, href: "#", label: "LinkedIn" },
-//   { icon: Twitter, href: "#", label: "Twitter" },
+  { icon: Link, href: "#", label: "GitHub" },
+  { icon: Link, href: "#", label: "LinkedIn" },
+  { icon: Link, href: "#", label: "Twitter" },
 ];
 
 const footerLinks = [

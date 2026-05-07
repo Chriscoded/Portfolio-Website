@@ -39,12 +39,14 @@ export const Contact = () => {
   });
   const [isLoading, setIsLoading] = useState(false);
   const [submitStatus, setSubmitStatus] = useState({
-    type: null, // 'success' or 'error'
+    type: "", // 'success' or 'error'
     message: "",
   });
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+const handleSubmit = async (
+      e: React.FormEvent<HTMLFormElement>
+    ) => {
+      e.preventDefault();
 
     setIsLoading(true);
     setSubmitStatus({ type: null, message: "" });
@@ -76,13 +78,20 @@ export const Contact = () => {
       });
       setFormData({ name: "", email: "", message: "" });
     } catch (err) {
-      console.error("EmailJS error:", err);
-      setSubmitStatus({
-        type: "error",
-        message:
-          err.text || "Failed to send message. Please try again later.",
-      });
-    } finally {
+  console.error("EmailJS error:", err);
+
+  const errorMessage =
+    typeof err === "object" &&
+    err !== null &&
+    "text" in err
+      ? String(err.text)
+      : "Failed to send message. Please try again later.";
+
+  setSubmitStatus({
+    type: "error",
+    message: errorMessage,
+  });
+} finally {
       setIsLoading(false);
     }
   };

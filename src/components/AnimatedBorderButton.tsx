@@ -1,5 +1,11 @@
 
-export const AnimatedBorderButton = ({ children }) => {
+import type { ReactNode, ButtonHTMLAttributes } from "react";
+
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  children: ReactNode;
+}
+
+export const AnimatedBorderButton = ({ children }: ButtonProps) => {
   return (
     <button
       className="relative bg-transparent border border-border 
