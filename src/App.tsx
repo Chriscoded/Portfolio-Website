@@ -6,9 +6,21 @@ import { Experience } from './sections/Experience'
 import { Testimonials } from './sections/Testimonials'
 import { Contact } from './sections/Contact'
 import { Footer } from './layout/Footer'
+import { useEffect, useState } from "react"
+import LoadingSkeleton from "./components/LoadingSkeleton"
 
 function App() {
+  const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
+  if (loading) {
+    return <LoadingSkeleton />;
+  }
   return (
       <div className="min-h-screen overflow-x-hidden">
         <Navbar />
