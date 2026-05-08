@@ -1,11 +1,11 @@
 import {
   ArrowRight,
   ChevronDown,
-  Link,
   Download,
 } from "lucide-react";
 import { Button } from "../components/Button";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const skills = [
     ".Net",
@@ -16,7 +16,6 @@ const skills = [
     "Laravel",
     "React",
     "Angular",
-    "TypeScript",
     "Node.js",
     "GraphQL",
     "PostgreSQL",
@@ -83,7 +82,7 @@ export const Hero = () => {
 
                             <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
                                 Hi, I'm Amaeme Christopher — a software engineer specializing in
-                                C# (.Net), Java SpringBoot, PHP(Laravel), Angular, React, and TypeScript. I build scalable, performant web
+                                C# (.Net), Java SpringBoot, PHP(Laravel), Angular and React. I build scalable, performant web
                                 applications that users love.
                             </p>
                         </div>
@@ -103,9 +102,9 @@ export const Hero = () => {
                         <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
                             <span className="text-sm text-muted-foreground">Follow me: </span>
                             {[
-                                { icon: Link, href: "#" },
-                                { icon: Link, href: "#" },
-                                { icon: Link, href: "#" },
+                                { icon: FaGithub, href: "#" },
+                                { icon: FaLinkedin, href: "#" },
+                                { icon: FaTwitter, href: "#" },
                             ].map((social, idx) => (
                                 <a
                                 key={idx}

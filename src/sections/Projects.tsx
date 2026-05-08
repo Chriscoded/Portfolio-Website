@@ -6,7 +6,7 @@ const projects = [
     description:
       "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
     image: "/projects/project1.png",
-    tags: ["React", "Typescript", "NodeJS"],
+    tags: ["React", "Java", "NodeJS", "Typescript"],
     link: "#",
     github: "#",
   },
@@ -15,7 +15,7 @@ const projects = [
     description:
       "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
     image: "/projects/project2.png",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
+    tags: [".Net", "Angular", "Stripe", "PostgreSQL", "Tailwind"],
     link: "#",
     github: "#",
   },
@@ -23,8 +23,8 @@ const projects = [
     title: "AI Writing Assistant",
     description:
       "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
-    image: "/projects/project3.png",
-    tags: ["React", "OpenAI", "Python", "FastAPI"],
+    image: "/projects/portfolio website.png",
+    tags: ["React", "OpenAI", "Python"],
     link: "#",
     github: "#",
   },
