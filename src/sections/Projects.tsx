@@ -1,7 +1,7 @@
 import { ArrowUpRight} from "lucide-react";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 import { motion } from "framer-motion";
-import { slideInRight, fadeIn } from "../utils/varaint";
+import { fadeIn } from "../utils/varaint";
 const projects = [
   {
     title: "DigiScholexa - Dynamic School Management System",
