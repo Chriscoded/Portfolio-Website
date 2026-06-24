@@ -1,5 +1,7 @@
 import { ArrowUpRight} from "lucide-react";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
+import { motion } from "framer-motion";
+import { slideInRight } from "../utils/varaint";
 const projects = [
   {
     title: "DigiScholexa - Dynamic School Management System",
@@ -66,7 +68,12 @@ export const Projects = () => {
       <div className="absolute bottom-1/4 left-0 w-64 h-64 bg-highlight/5 rounded-full blur-3xl" />
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
-        <div className="text-center mx-auto max-w-3xl mb-16">
+        <motion.div className="text-center mx-auto max-w-3xl mb-16"
+          variants={slideInRight( 0.5)}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{once: true}}
+        >
           <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
             Featured Work
           </span>
@@ -81,15 +88,18 @@ export const Projects = () => {
             A selection of my recent work, from complex web applications to
             innovative tools that solve real-world problems.
           </p>
-        </div>
+        </motion.div>
 
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, idx) => (
-            <div
+            <motion.div
+              variants={slideInRight( 0.5)}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
               key={idx}
               className="group glass rounded-2xl overflow-hidden animate-fade-in md:row-span-1"
-              style={{ animationDelay: `${(idx + 1) * 100}ms` }}
             >
               {/* Image */}
               <div className="relative overflow-hidden aspect-video">
@@ -147,7 +157,7 @@ export const Projects = () => {
                   ))}
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 

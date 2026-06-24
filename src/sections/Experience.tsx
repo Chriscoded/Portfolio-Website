@@ -4,7 +4,7 @@ const experiences = [
     role: "Software Engineer",
     company: "Fairsure Payment Limited",
     description:
-      "Part of a Team that is building an E-Payment System",
+      "Part of a Team that is building and managing an E-Payment System",
     technologies: ["Java",".Net Core", "React.js", "Tailwind CSS"],
     current: true,
   },

@@ -1,4 +1,6 @@
 import { Code2, Lightbulb, Rocket, Users } from "lucide-react";
+import { motion } from "framer-motion";
+import { slideInRight, fadeInUp, fadeIn } from "../utils/varaint";
 
 const highlights = [
   {
@@ -33,21 +35,36 @@ export const About = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Column */}
           <div className="space-y-8">
-            <div className="animate-fade-in">
+            <motion.div className="animate-fade-in"
+              variants={slideInRight(0.4)}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{once: true}}
+              >
               <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase">
                 About Me
               </span>
-            </div>
+            </motion.div>
 
-            <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
+            <motion.div className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground"
+              variants={fadeInUp(0.5)}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{once: true}}
+            >
               Building the future,
               <span className="font-serif italic font-normal text-white">
                 {" "}
                 one component at a time.
               </span>
-            </h2>
+            </motion.div>
 
-            <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
+            <motion.div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200"
+              variants={fadeIn("down", 0.5)}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{once: true}}
+            >
               <p>
                 I'm a passionate software engineer with over 5 years of
                 experience crafting digital products that make a difference. My
@@ -66,21 +83,30 @@ export const About = () => {
                 contributing to open-source projects, or sharing knowledge with
                 the developer community.
               </p>
-            </div>
+            </motion.div>
 
-            <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
+            <motion.div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300"
+              variants={fadeIn("down", 0.5)}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{once: true}}
+            >
               <p className="text-lg font-medium italic text-foreground">
                 "My mission is to create digital experiences that are not just
                 functional, but truly delightful — products that users love to
                 use and developers love to maintain."
               </p>
-            </div>
+            </motion.div>
           </div>
 
           {/* Right Column - Hilights */}
           <div className="grid sm:grid-cols-2 gap-6">
             {highlights.map((item, idx) => (
-              <div
+              <motion.div
+                variants={fadeIn("right", 0.5)}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{once: true}}
                 key={idx}
                 className="glass p-6 rounded-2xl animate-fade-in"
                 style={{ animationDelay: `${(idx + 1) * 100}ms` }}
@@ -92,7 +118,7 @@ export const About = () => {
                 <p className="text-sm text-muted-foreground">
                   {item.description}
                 </p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

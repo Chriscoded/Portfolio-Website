@@ -17,6 +17,7 @@ const skills = [
     "React",
     "Angular",
     "Node.js",
+    "Express.js",
     "GraphQL",
     "PostgreSQL",
     "MongoDB",
