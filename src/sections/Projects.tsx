@@ -2,41 +2,60 @@ import { ArrowUpRight} from "lucide-react";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 const projects = [
   {
-    title: "Fintech Dashboard",
+    title: "DigiScholexa - Dynamic School Management System",
     description:
-      "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
-    image: "/projects/project1.png",
-    tags: ["React", "Java", "NodeJS", "Typescript"],
+      "Contributed to the Design and development of DigiScholexa solution with the experience of running school management systems, we built a system that do not only solve the issue of running school effortlessly but solve all the bottleneck other School Management Systems suffer.",
+    image: "/projects/DigiScholexa Site.png",
+    tags: ["NODE.js", "Express.js","React.js", "Typescript", "PostgreSQL"],
+    link: "https://digischolexa.com/",
+    github: "#",
+  },
+    {
+    title: "CRM Dashboard – VIP Express Tourism Limited",
+    description:
+      "Designed and developed a CRM solution for VIP Express Tourism Limited to manage customer data, monitor interactions, streamline communication, and drive more efficient relationship management.  integrating data from their core Provision system via SQL views and a dedicated DbContext, while automating promotional campaigns and client correspondence workflows to improve engagement and operational efficiency.",
+    image: "/projects/CRM Dashboard.png",
+    tags: ["ASP.Net Core", "Angular", "Typescript", "PostgreSQL"],
     link: "#",
     github: "#",
   },
   {
-    title: "E-Commerce Platform",
+    title: "Debt Recovery Platform – VIP Express Tourism Limited",
     description:
-      "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
-    image: "/projects/project2.png",
-    tags: [".Net", "Angular", "Stripe", "PostgreSQL", "Tailwind"],
+      "Developed a debt recovery platform for VIP Express Tourism Limited to manage outstanding customer payments, track recovery progress, and improve follow-up efficiency. The system streamlined debt monitoring by centralizing debtor records, repayment information, and recovery activities, while supporting automated reminders and communication workflows to improve collection processes and operational visibility.",
+    image: "/projects/DR Dashboard.png",
+    tags: ["ASP.Net", "Vue.js", "MSSQL", "Bootstrap"],
     link: "#",
     github: "#",
   },
-  {
-    title: "AI Writing Assistant",
+   {
+    title: "Fairsure e-Payment website",
     description:
-      "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
+      "Contributed to the development of the Fairsure Payment platform by building frontend components for a fintech solution that supports payment gateway, checkout, and payment links. Worked on responsive interfaces, improved user flows, and helped create a seamless experience for businesses managing digital payments online.",
+    image: "/projects/Fairsure website.png",
+    tags: ["React", "Typescript", "Tailwind CSS"],
+    link: "https://fairsurepayment.com.ng/",
+    github: "#",
+  },
+     {
+    title: "VIP Express Tourism Limited website",
+    description:
+      "Developed the VIP Express Tourism Limited platform.",
+    image: "/projects/VIP-Express-Website.png",
+    tags: ["React", "Typescript", "Tailwind CSS"],
+    link: "https://www.vipexpressnigeria.com/how-to-travel/vip-express-tourism-limited/",
+    github: "#",
+  },
+  {
+    title: "Porfolio",
+    description:
+      "Personal portfolio built using React.js, javascript and tailwind CSS",
     image: "/projects/portfolio website.png",
-    tags: ["React", "OpenAI", "Python"],
+    tags: ["React", "Tailwind CSS", "Javascript"],
     link: "#",
     github: "#",
   },
-  {
-    title: "Project Management Tool",
-    description:
-      "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
-    image: "/projects/project4.png",
-    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
-    link: "#",
-    github: "#",
-  },
+ 
 ];
 
 export const Projects = () => {

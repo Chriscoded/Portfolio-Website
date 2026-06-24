@@ -1,4 +1,13 @@
 const experiences = [
+    {
+    period: "May 2026 — Jan 2026",
+    role: "Software Engineer",
+    company: "Fairsure Payment Limited",
+    description:
+      "Part of a Team that is building an E-Payment System",
+    technologies: ["Java",".Net Core", "React.js", "Tailwind CSS"],
+    current: true,
+  },
   {
     period: "June 2023 — Jan 2026",
     role: "Software Developer",
@@ -6,7 +15,7 @@ const experiences = [
     description:
       "Engineered and maintained automated direct debit mandate, reservation booking systems and CRM platforms using .Net Core/Angular, and Laravel/Vue.js. Architected and optimized database structures with MySQL, MSSQL, and PostgreSQL to ensure scalability and efficient data handling.",
     technologies: [".Net Core", "Laravel", "Angular", "DevExpress", "Vue.js"],
-    current: true,
+    current: false,
   },
   {
     period: "March 2023 — July 2023",
