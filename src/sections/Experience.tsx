@@ -1,3 +1,6 @@
+import {motion} from "framer-motion"
+import { fadeIn } from "../utils/varaint";
+
 const experiences = [
     {
     period: "May 2026 — Jan 2026",
@@ -104,12 +107,17 @@ export const Experience = () => {
                 </div>
 
                 {/* Content */}
-                <div
+                <motion.div
                   className={`pl-8 md:pl-0 ${
                     idx % 2 === 0
                       ? "md:pr-16 md:text-right"
                       : "md:col-start-2 md:pl-16"
                   }`}
+
+                  variants={ idx % 2 === 0? fadeIn("left", 0.5) : fadeIn("right", 0.5) }
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
                 >
                   <div
                     className={`glass p-6 rounded-2xl border border-primary/30 hover:border-primary/50 transition-all duration-500`}
@@ -137,7 +145,7 @@ export const Experience = () => {
                       ))}
                     </div>
                   </div>
-                </div>
+                </motion.div>
               </div>
             ))}
           </div>

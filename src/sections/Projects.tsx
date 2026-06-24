@@ -1,7 +1,7 @@
 import { ArrowUpRight} from "lucide-react";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 import { motion } from "framer-motion";
-import { slideInRight } from "../utils/varaint";
+import { slideInRight, fadeIn } from "../utils/varaint";
 const projects = [
   {
     title: "DigiScholexa - Dynamic School Management System",
@@ -69,10 +69,11 @@ export const Projects = () => {
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
         <motion.div className="text-center mx-auto max-w-3xl mb-16"
-          variants={slideInRight( 0.5)}
+          variants={fadeIn("right", 0.5)}
           initial="hidden"
           whileInView="visible"
           viewport={{once: true}}
+          
         >
           <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
             Featured Work
@@ -94,7 +95,7 @@ export const Projects = () => {
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, idx) => (
             <motion.div
-              variants={slideInRight( 0.5)}
+              variants={fadeIn("down", 0.5)}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
